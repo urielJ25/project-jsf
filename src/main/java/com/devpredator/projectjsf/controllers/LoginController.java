@@ -21,7 +21,7 @@ public class LoginController {
 	 */
 	private String usuario;
 	/**
-	 * Contraseña ingresada en el Login.
+	 * Contraseña que ingresan en el Login
 	 */
 	private String password;
 	/**

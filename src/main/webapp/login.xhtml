@@ -15,7 +15,7 @@
       			<h:inputText id="txtUsuario" value="#{LoginController.usuario}" required="true" requiredMessage="El usuario es requerido"></h:inputText>
       			
       			<h:outputText value="Contraseña: *" styleClass="colorText"></h:outputText>
-      			<h:inputSecret id="txtPassword" value="#{LoginController.password}" required="true" requiredMessage="El contraseña es requerida"></h:inputSecret>
+      			<h:inputSecret id="txtPassword" value="#{LoginController.password}" required="true" requiredMessage="El contraseña es requerida"></h:inputSecret> <!-- Agregar un mensaje de error -->
       			
       			<h:commandButton value="Entrar" action="#{LoginController.ingresar}"></h:commandButton>
       		</h:panelGrid>
