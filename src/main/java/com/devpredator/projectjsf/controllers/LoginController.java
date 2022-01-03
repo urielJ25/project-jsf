@@ -34,10 +34,13 @@ public class LoginController {
 		if(usuario.equals("devpredator") && password.equals("12345")) {
 			
 			try {
+				
 				this.rediccionar("principal.xhtml"); // Llamar clase para redireccionar
 				
 			} catch (IOException e) {
+				
 				FacesContext.getCurrentInstance().addMessage("formLogin:txtUsuario", new FacesMessage(FacesMessage.SEVERITY_ERROR, "La página no existe", ""));
+				
 				e.printStackTrace();
 			}
 			//FacesContext.getCurrentInstance().addMessage("formLogin:txtUsuario", new FacesMessage(FacesMessage.SEVERITY_INFO, "Usuario Correcto", ""));
